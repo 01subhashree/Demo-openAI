@@ -1,0 +1,85 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.leftSidebar {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #1d1b1b;
+  color: white;
+}
+
+.buttonDiv {
+  display: flex;
+  padding: 0.5rem;
+  background-color: palegoldenrod;
+  border-radius: 1rem;
+}
+.button {
+  padding: 1rem;
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  font-weight: bold;
+}
+.rightSidebar {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: space-between;
+  background-color: #343541;
+  color: white;
+}
+
+.history_Div {
+  flex: 1;
+  padding-top: 1rem;
+}
+.navbar {
+  width: 100%;
+  height: 5rem;
+  justify-content: space-between;
+  display: flex;
+}
+.buttom_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input_div {
+  margin-bottom: 1rem;
+  background-color: transparent;
+  align-items: center;
+  border-radius: 1vh;
+  width: 70%;
+  border: 0.5px solid #625e56;
+  justify-content: space-between;
+  display: flex;
+  padding-right: 0.5rem;
+}
+
+.submit {
+  width: 4rem;
+  height: 2rem;
+  color: black;
+  padding: 0;
+}
+
+.inputBox {
+  background-color: transparent;
+  border: none;
+  padding: 0.8rem;
+  flex: 1 1;
+}
+.outputDiv {
+  flex: 1 1;
+}
+.contentDiv {
+  height: fit-content;
+  padding: 0.5rem 0;
+}
