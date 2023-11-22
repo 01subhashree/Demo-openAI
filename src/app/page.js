@@ -2,7 +2,7 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "your api key";
 
 export default function Home() {
   const [data, setData] = useState("");
