@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "YOUR_API_KEY";
 
 export default function Home() {
   const [inputText, setInputText] = useState("");
