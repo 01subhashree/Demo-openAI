@@ -1,38 +1,115 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fafafc;
+  color: #777;
+}
+.sesrch-section {
+  padding: 2rem 3rem;
+}
+.input_container {
+  /* width: 70%; */
+  display: flex;
+  border-radius: 1vh;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.input_container input {
+  border: none;
+  padding: 1rem;
+  background: transparent;
+  flex: 1;
+  font-size: 1rem;
+}
+.input_container input:focus {
+  outline: none;
+}
+
+.input_container button {
+  border: none;
+  padding: 0 0.7rem;
+  background: transparent;
+  border-radius: 0 1rem 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  border-left: 1px solid #bfb9af;
+}
+.suprise_section {
+  font-weight: bold;
+  color: black;
+  font-size: 1.1rem;
+  background-color: #f0eeee;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1vh;
+  margin-left: 0.5rem;
+}
+.modal_screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+.extra-info {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image_section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.image_section img {
+  flex-grow: 1;
+  max-width: 30%;
+  min-width: 300px;
+  border-radius: 1rem;
+  margin: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal {
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* height: 60%;
+  width: 30%; */
 }
 
-.App-link {
-  color: #61dafb;
+.img-container {
+  height: 256px;
+  width: 256px;
+  overflow: hidden;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cross {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+.modal button {
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+}
+.modal button:active {
+  background-color: #fafafc;
 }
